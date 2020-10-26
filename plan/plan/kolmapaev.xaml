@@ -6,7 +6,8 @@
         <StackLayout BackgroundColor="LightGray">
             <Label Text="kolmapaev" TextColor="Yellow"
                 VerticalOptions="StartAndExpand"
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                   <Image Source="2.jpg"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

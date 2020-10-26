@@ -13,13 +13,13 @@ namespace plan
         public MainPage()
         {
             StackLayout st = new StackLayout();
-            Button esm_btm = new Button { Text = "esmaspäev" };
-            Button teis_btm = new Button { Text = "teisipäev" };
-            Button kolm_btm = new Button { Text = "kolmapäev" };
-            Button nel_btm = new Button { Text = "neljapäev" };
-            Button red_btm = new Button { Text = "rede" };
-            Button lau_btm = new Button { Text = "laupäev" };
-            Button puh_btm = new Button { Text = "pühapäev" };
+            Button esm_btm = new Button { Text = "esmaspäev", ImageSource = "4.JPG", BackgroundColor=Color.LightPink };
+            Button teis_btm = new Button { Text = "teisipäev", ImageSource = "4.JPG", BackgroundColor=Color.LightGreen};
+            Button kolm_btm = new Button { Text = "kolmapäev", ImageSource = "4.JPG", BackgroundColor=Color.LightGray};
+            Button nel_btm = new Button { Text = "neljapäev", ImageSource = "4.JPG", BackgroundColor=Color.LightSalmon};
+            Button red_btm = new Button { Text = "rede", ImageSource = "4.JPG", BackgroundColor=Color.LightYellow};
+            Button lau_btm = new Button { Text = "laupäev", ImageSource = "4.JPG" };
+            Button puh_btm = new Button { Text = "pühapäev", ImageSource = "4.JPG" };
 
 
 
