@@ -11,14 +11,13 @@ namespace plan
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class puhapaev : ContentPage
+
     {
         string[] tasks = new string[] { "просыпаемся", "приводим себя в порядок", "что нибудь закидываем в рот", "собираем монатки", "приезжаем в аэрапорт", "летим домой", "залетаем домой", "кидаем вещи у порога", "идем в душ", "го ту бэд" };
         ListView list = new ListView();
         list.ItemsSource = tasks;
             list.ItemSelected += List_ItemSelected;
-            Content = new StackLayout { Children = { list
-    }
-};
+              Content = new StackLayout { Children = { lista, bbk, bb }};
         }
  {
     Button bb = new Button { Text = "tagasi" };
@@ -77,9 +76,11 @@ private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs
         {
             kell = "20:54";
         }
-        await DisplayAlert(kell, text, "jah");
     }
 
-}
+    private async void Bb_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+
     }
 }

@@ -88,12 +88,14 @@ namespace plan
                 {
                     kell = "???";
                 }
-                await DisplayAlert(kell, text, "jah");
+                }
+
+                private async void Bb_Clicked(object sender, EventArgs e)
+                {
+                    await Navigation.PopAsync();
+
+                }
             }
-            
         }
-}
     }
-    
-
-
+}

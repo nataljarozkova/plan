@@ -92,11 +92,15 @@ private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs
                 {
             kell = "03.55";
         }
-        await DisplayAlert(kell, text, "jah");
     }
 
-}
-}
+    private async void Bb_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+
     }
-    
+}
+        }
+    }
+}
 
