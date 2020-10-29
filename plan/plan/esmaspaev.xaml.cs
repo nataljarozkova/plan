@@ -20,8 +20,16 @@ namespace plan
             list.ItemSelected += List_ItemSelected;
             Content = new StackLayout { Children = { list } };
 
+            { Button bb = new Button { Text = "tagasi" };
+            bb.Clicked += Bb_Clicked;
 
-        }
+            Button bbk = new Button { Text = "edasi" };
+            bbk.Clicked += Bbk_Clicked;
+
+
+            list.ItemSelected += List_ItemSelected;
+            Content = new StackLayout { Children = { list, bb, bbk } };
+            }
         string kell;
         private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,14 +14,26 @@ namespace plan
     {
         public teisipaev()
         {
-            string[] tasks = new string[] { "встаем", "пудрим носик", "пьем Borjomi", "собираем монатки", "едем в ажапорт", "летим в Лондон", "бросаем монатки в люкс", "тусуемсмя в клуюе с Элей", "хаваем на халяву", "сбегаем с клуба", "бегаем от работник куба из-за неоплаченного счета", "прячемся в номере", "чилим под пивас и квас" };
+            string[] tasks = new string[] { "встаем", "пудрим носик", "пьем Borjomi", "собираем монатки", "едем в аэрапорт", "летим в Лондон", "бросаем монатки в люкс", "тусуемсмя в клуюе с Элей", "хаваем на халяву", "сбегаем с клуба", "бегаем от работник куба из-за неоплаченного счета", "прячемся в номере", "чилим под пивас и квас" };
     ListView list = new ListView();
     list.ItemsSource = tasks;
     list.ItemSelected += List_ItemSelected;
     Content = new StackLayout { Children = { list } };
 
 
-}
+        }
+         { Button bb = new Button { Text = "tagasi" };
+        bb.Clicked += Bb_Clicked;
+
+            Button bbk = new Button { Text = "edasi" };
+        bbk.Clicked += Bbk_Clicked;
+
+
+            list.ItemSelected += List_ItemSelected;
+            Content = new StackLayout { Children = { list, bb, bbk
+    }
+};
+            }
 string kell;
 private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
 {

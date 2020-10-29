@@ -7,7 +7,7 @@
             <Label Text="teisipaev" TextColor="Blue"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Image Source="2.jpg"/>
+            <Image Source="london.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

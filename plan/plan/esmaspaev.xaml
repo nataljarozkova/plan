@@ -7,7 +7,7 @@
             <Label Text="esmaspaev!" TextColor="Purple"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Image Source="1.1.jpg"/>
+            <Image Source="paris.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

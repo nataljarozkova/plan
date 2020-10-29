@@ -7,7 +7,7 @@
             <Label Text="kolmapaev" TextColor="Yellow"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="CenterAndExpand"
-                   <Image Source="2.jpg"/>
+           <Image Source="rio.png"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
